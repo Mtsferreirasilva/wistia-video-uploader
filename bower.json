@@ -1,0 +1,24 @@
+{
+  "name": "wistia-video-uploader",
+  "homepage": "https://github.com/Mtsferreirasilva/wistia-video-uploader",
+  "authors": [
+    "mtsferreirasilva <mtsferreirasilva@gmail.com>"
+  ],
+  "description": "Uploads videos to wistia using AngularJS",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "angular-material": "~0.11.4",
+    "angular": "1.5.0-beta.2",
+    "blueimp-file-upload": "https://github.com/blueimp/jQuery-File-Upload.git#~9.11.2"
+  }
+}

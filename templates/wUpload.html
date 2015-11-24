@@ -1,0 +1,20 @@
+<form action="" method="POST" validate enctype="multipart/form-data">
+	<div class="fileupload-buttonbar">
+		<md-toolbar ng-show='fail' class="md-warn error-msg">
+			<div class="md-toolbar-tools">
+				<h2 class="md-flex">Sorry, but something went wrong and we couldn't upload your video! Please, try again later.</h2>
+			</div>
+		</md-toolbar>
+		<span class="fileinput-button" ng-hide="uploading">
+			<span>+ Upload video</span>
+			<input id="fileupload" type="file" name="file" accept="video/*">
+		</span>
+		<span id="abortupload" ng-show="uploading" class="abortupload-button">Cancel upload</span>
+		<md-progress-linear md-mode="determinate" ng-show='uploading' value='{{percentage}}'></md-progress-linear>
+		<span class="percentage-value" ng-class="{'show': uploading}">{{percentage}}%</span>
+		<span class="file-info" ng-class="{'show': uploading}"><strong>File size:</strong> {{fileSize}}Mb - <strong>Uploaded:</strong> {{fileTotalUploaded}}Mb</span>
+		<span ng-show="processing" class="processing">We are now processing your video. Hold tight.</span>
+	</div>
+</form>
+
+<div id="wistia-container"></div>
