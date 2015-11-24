@@ -50,6 +50,7 @@ processStreetVideoUploader.directive('wUpload', ['checkVideoStatusFactory', 'fil
 
 					add: function(e, data) {
 						console.log('ADD');
+						console.log(data);
 						$scope.uploading = false;
 						$scope.processing = false;
 						$scope.fail = false;
@@ -102,6 +103,9 @@ processStreetVideoUploader.directive('wUpload', ['checkVideoStatusFactory', 'fil
 						$scope.checkVideoStatus();
 
 						$scope.$apply();
+					},
+					abort: function(e, data){
+						console.log('ABORTED');
 					}
 				};
 			}],
