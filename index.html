@@ -18,16 +18,14 @@
 	<!-- My Styles -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body ng-app="processStreetVideoUploader" ng-cloak>
+<body ng-app="wVideoUploader" ng-cloak>
 	
 	<md-toolbar layout="row">
 		<div class="md-toolbar-tools">
 			<md-button ng-click="vm.toggleSidenav('left')" hide-gt-sm class="md-icon-button">
-			<md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg">
-			</md-icon>
 		</md-button>
 		<div class="container">
-			<h1>Video Upload</h1>
+			<h1>Wistia Video Upload <span class="createdby">Created by <a target="_blank" href="http://mateusferreira.com.br/en/">Mateus Ferreira</a></span></h1>
 		</div>
 		</div>
 	</md-toolbar>
@@ -41,25 +39,25 @@
 	</div>
 
 	<!-- Angular -->
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-	<script src="bower_components/angular-aria/angular-aria.min.js"></script>
-	<script src="bower_components/angular-material/angular-material.min.js"></script>
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="./bower_components/angular-material/angular-material.min.js"></script>
 	
 	<!-- File Upload -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
-	<script src="bower_components/blueimp-load-image/js/load-image.all.min.js"></script>
-	<script src="bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.min.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload-audio.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
-	<script src="bower_components/blueimp-file-upload/js/jquery.fileupload-angular.js"></script>
+	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+	<script src="./bower_components/blueimp-load-image/js/load-image.all.min.js"></script>
+	<script src="./bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.min.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload-audio.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
+	<script src="./bower_components/blueimp-file-upload/js/jquery.fileupload-angular.js"></script>
 
 	<!-- Wistia -->
 	<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
@@ -71,9 +69,9 @@
 	</script>
 
 	<!-- App -->
-	<script src="scripts/app.js"></script>
-	<script src="scripts/factories/checkVideoStatusFactory.js"></script>
-	<script src="scripts/controllers/controllers.js"></script>
-	<script src="scripts/directives/wUpload.js"></script>
+	<script src="./scripts/app.js"></script>
+	<script src="./scripts/factories/checkVideoStatusFactory.js"></script>
+	<script src="./scripts/controllers/controllers.js"></script>
+	<script src="./scripts/directives/wUpload.js"></script>
 </body>
 </html>

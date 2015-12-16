@@ -1,4 +1,4 @@
-processStreetVideoUploader.factory('checkVideoStatusFactory', function($http, $rootScope){
+wVideoUploader.factory('checkVideoStatusFactory', function($http, $rootScope){
 	return {
 		getData: function(){
 			$http.get('https://api.wistia.com/v1/medias.json', {

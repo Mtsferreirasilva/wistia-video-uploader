@@ -1,6 +1,6 @@
-var processStreetVideoUploader = angular.module("processStreetVideoUploader", ['ui.router', 'ngMaterial', 'blueimp.fileupload']);
+var wVideoUploader = angular.module("wVideoUploader", ['ui.router', 'ngMaterial', 'blueimp.fileupload']);
 
-processStreetVideoUploader.config(function($stateProvider, $urlRouterProvider) {
+wVideoUploader.config(function($stateProvider, $urlRouterProvider) {
 	//Redirect
 	$urlRouterProvider.otherwise("/uploader");
 	
