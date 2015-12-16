@@ -8,7 +8,7 @@ wVideoUploader.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('uploader', {
 			url: "/uploader",
-			templateUrl: "views/uploader.html",
+			templateUrl: "/wistia-video-uploader/views/uploader.html",
 			controller: "wUploadController"
 		});
 });
