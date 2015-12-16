@@ -2,7 +2,7 @@ wVideoUploader.directive('wUpload', ['checkVideoStatusFactory', 'fileUpload', '$
 		return {
 			restrict: 'EA', // As directive and as web component
 			scope: {}, // Creates an isolated Scope
-			templateUrl: 'templates/wUpload.html', // Template Path
+			templateUrl: '/wistia-video-uploader/templates/wUpload.html', // Template Path
 			
 			controller: ['$scope', 'checkVideoStatusFactory', '$interval', function($scope, checkVideoStatusFactory, $interval) {
 				$scope.uploading = false;
