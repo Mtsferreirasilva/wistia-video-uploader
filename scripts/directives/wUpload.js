@@ -1,4 +1,4 @@
-processStreetVideoUploader.directive('wUpload', ['checkVideoStatusFactory', 'fileUpload', '$http', '$rootScope', '$interval', function(fileUpload, $http, checkVideoStatusFactory, $rootScope, $interval){
+wVideoUploader.directive('wUpload', ['checkVideoStatusFactory', 'fileUpload', '$http', '$rootScope', '$interval', function(fileUpload, $http, checkVideoStatusFactory, $rootScope, $interval){
 		return {
 			restrict: 'EA', // As directive and as web component
 			scope: {}, // Creates an isolated Scope

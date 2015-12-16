@@ -1,3 +1,3 @@
-processStreetVideoUploader.controller('wUploadController', function($scope){
+wVideoUploader.controller('wUploadController', function($scope){
 
 });

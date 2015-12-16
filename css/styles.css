@@ -45,6 +45,12 @@
   margin: auto;
   margin-top: 10px; }
 
+.createdby {
+  font-size: 14px;
+  font-style: italic; }
+  .createdby a {
+    text-decoration: underline; }
+
 @media (min-width: 600px) {
   .container {
     max-width: 80%; } }
